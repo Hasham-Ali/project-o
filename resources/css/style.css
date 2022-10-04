@@ -1,0 +1,695 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-weight: 300;
+    color: #555;
+
+}
+
+html,
+body{
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300px;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+}
+
+
+
+/*--------Header Section-----------*/
+
+
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;   
+}
+.hero-sec-box{
+    position: absolute;
+    top: 40%;
+    left: 13%;
+}
+hero-sec-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.hero-sec-box h1{
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 100;
+    font-size: 240%;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+.hero-button:link,
+.hero-button:visited{
+    display: inline-block;
+    padding: 8px 25px 8px 25px;
+    border-radius: 200px;
+    font-weight: 300;
+    text-decoration: none;
+    transition: background-color 0.5s, border 0.2s, color 0.2s;
+}
+.btn1:link,
+.btn1:visited{
+    background-color: #e67e22;
+    border: 2px solid #e67e22;
+    color: #fff;
+}
+.btn2:link,
+.btn2:visited{
+    color:  #cf6f1b;
+    border: 2px solid #cf6f1b;
+    margin-left: 20px;
+}
+.btn1:hover,
+.btn1:active{
+    background-color: #cf6f1b;
+    border: 2px solid #cf6f1b;
+}
+.btn2:hover,
+.btn2:active{
+    background-color: #cf6f1b;
+    color: #fff;
+}
+
+/*--------- mobile nav -------- */
+
+.mobile-nav-icon-on{
+    float: right;
+    font-size: 40px;
+    margin-top: 30px;
+    color: #fff;
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-nav-icon-off{
+    float: right;
+    font-size: 40px;
+    margin-top: 30px;
+    color: #fff;
+    display: none;
+    cursor: pointer;
+}
+
+
+
+/*--------- sticky nav -------- */
+
+.sticky{
+    background-color: rgba(255, 255, 255, 0.986);
+    position: fixed;
+    left: 0;
+    right: 0;
+    box-shadow: 0px 0.4px 4px 0px rgb(206, 206, 206);
+    z-index: 9999;
+}
+
+.sticky .main-nav{
+    margin-top: 14px;
+    margin-bottom: -7px;
+    margin-right: 180px;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited{
+    color: #555;
+    padding-bottom: 14px;
+}
+
+.sticky .main-logo{display: none;}
+
+.sticky .main-logo-black{display: inline-block;}
+
+
+/*--------- main nav ---------*/
+.main-logo{
+    margin-top: 20px;
+    height: auto;
+    width: 100px;
+    float: left;
+}
+.main-logo-black{
+    height: auto;
+    width: 50px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-left: 180px;
+    display: none;
+
+    
+}
+.main-nav{
+    float: right;
+    list-style-type: none;
+    margin-top: 40px;
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-left: 40px;
+}
+.main-nav li a:link,
+.main-nav li a:visited{
+    text-decoration: none;
+    color: #fff;
+    font-size: 90%;
+    padding-bottom: 10px;
+    transition: border-bottom 0.2s;
+    border-bottom: 2px solid transparent;
+}
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #e67e22;
+}
+
+
+/*--------Feature Section-----------*/
+
+
+.feature-head{
+    margin-top: 70px;
+}
+.feature-head h1{
+    margin: auto;
+    font-weight: 300;
+    font-size: 200%;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.feature-head h1:after{
+    display: block;
+    background-color: #e67e22;
+    width: 100px;
+    height: 2px;
+    content: " ";
+    margin: auto;
+    margin-top: 30px;
+}
+.head-paragraph{
+    width: 800px;
+    margin: auto;
+    margin-top: 30px;
+}
+.head-paragraph p{
+    text-align: center;
+    font-size: 90%;
+}
+.feature-body{
+    margin-top: 50px;
+}
+.feature-body div{
+    padding-left: 16px;
+}
+.feature-body h3{
+    font-size: 116%;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+.feature-body p{
+    font-size: 90%;
+}
+
+
+/*--------Meals Section-----------*/
+
+
+.meals-body{
+    margin-top: 60px;
+}
+.meals div{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: #000;
+}
+.meals div img{
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+    transform: scale(1.3);
+    transition: transform 0.5s, opacity 0.5s;
+}
+.meals div img:hover{
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+
+/*--------How it work Section-----------*/
+
+
+.how-it-work-section{
+    background-color: #f4f4f4;
+    padding-bottom: 75px;
+}
+
+.how-it-work-heading h1{
+    margin: auto;
+    margin-top: 75px;
+    font-size: 200%;
+    text-align: center;
+    font-weight: 300;
+}
+.how-it-work-heading h1:after{
+    content: " ";
+    display: block;
+    background-color: #e67e22;
+    height: 2px;
+    width: 100px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.app-work img{
+    margin-top: 50px;
+    width: 45%;
+    float: right;
+    padding-right: 30px;
+}
+
+.step3-work{
+    margin-top: 74px;
+    width: 90%;
+}
+.step3-work p{
+    padding: 10px;
+}
+
+.step3-work div{
+    color: #e67e22;
+    height: 60px;
+    width: 60px;
+    border: 2px solid #e67e22;
+    border-radius: 50% ;
+    text-align: center;
+    padding: 10px;
+    float: left;
+    margin-top: 14px;
+    margin-right: 30px;
+}
+
+.step3-work a img{
+    margin-top: 40px;
+    padding: 6px;
+}
+
+
+/*--------Cities Section-----------*/
+
+
+.cities-section{
+    margin-bottom: 70px;
+}
+
+.cities-heading h1{
+    margin: auto;
+    margin-top: 70px;
+    font-weight: 300;
+    font-size: 200%;
+    text-align: center;
+}
+.cities-heading h1:after{
+    content: " ";
+    height: 2px;
+    width: 100px;
+    background-color: #e67e22;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.cities-rating{
+    margin-top: 60px;
+}
+.cities-rating section{
+    padding: 20px;
+}
+
+.cities-rating section img{
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.cities-rating h3{
+    padding-top: 14px;
+    font-size: 130%;
+    font-weight: 300;
+}
+.cities-rating div{
+    padding-bottom: 4px;
+    font-size: 100%;
+}
+
+.cities-rating div a{
+    border-bottom: 1px solid #e67e22;
+    color: #e67e22;
+    transition: color 0.2s, border-bottom 0.2s;
+}
+.cities-rating div a:hover{
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid transparent;
+}
+.cities-rating div i{
+    color: #e67e22;
+    font-size: 120%;
+    margin-right: 10px;
+}
+.cities-rating div i:hover{
+    color: cornflowerblue;
+}
+
+
+/*--------Testimonials Section-----------*/
+
+
+.testimonials-section{
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(../images/back-customers.jpg);
+    padding-bottom: 70px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.testimonials-heading h1{
+    margin: auto;
+    margin-top: 70px;
+    font-weight: 300;
+    color: #fff;
+    text-align: center;
+    font-size: 200%;
+}
+.testimonials-heading h1:after{
+    content: " ";
+    height: 2px;
+    width: 100px;
+    background-color: #e67e22;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+}
+.testimonials-detials p:before{
+    content: "\201C";
+    font-size: 400%;
+    display: block;
+    margin-bottom: -40px;
+}
+.testimonials-detials p{
+    margin-top: 50px;
+    text-align: left;
+    color: #fff;
+    font-size: 90%;
+    font-style: italic;
+}
+.testimonials-detials div{
+    color: #fff;
+    font-size: 90%;
+    font-style: italic;
+}
+.testimonials-detials div img{
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+/*--------Plans Section-----------*/
+
+
+.plans-section{
+    background-color: #f4f4f4;
+}
+
+.plans-heading h1{
+    text-align: center;
+    margin: auto;
+    margin-top: 70px;
+    font-weight: 300;
+    font-size: 200%;
+}
+.plans-heading h1:after{
+    content: "";
+    height: 2px;
+    width: 100px;
+    background-color: #e67e22;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.plans-col{
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+.plans-box-sec1{
+    background-color: #fcfcfc;
+    border-bottom: 1px solid rgb(226, 226, 226);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    
+}
+.plans-box-sec1 h3{
+    padding: 15px 0px 10px 15px;
+    font-size: 120%;
+}
+.price{
+    color: #e67e22;
+    font-size: 200%;
+    padding-left: 15px;
+}
+.plans-box-sec1 p:last-child{
+    font-size: 80%;
+    color: #555;
+    padding-left: 15px;
+}
+
+.plans-box-sec2{
+    background-color: #fff;
+    border-bottom: 1px solid rgb(226, 226, 226);
+}
+.plans-icon{
+    color: #e67e22;
+    margin-right: 15px;
+}
+.plans-box-sec2 ul{
+    list-style-type: none;
+    padding: 20px 0px 0px 20px;
+    line-height: 40px;
+}
+
+.plans-box-btn-active{
+    background-color: #fff;
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+.plans-box-btn-active a:link,
+.plans-box-btn-active a:visited{
+    background-color: #e67e22;
+    padding: 10px 50px 10px 50px;
+    border-radius: 60px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 90%;
+    transition: background-color 0.3s;
+    font-weight: 300;
+}
+.plans-box-btn-active a:hover,
+.plans-box-btn-active a:active{
+    background-color: #cf6f1b;
+}
+
+.plans-box-btn{
+    background-color: #fff;
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+.plans-box-btn a:link,
+.plans-box-btn a:visited{
+    padding: 9px 50px 9px 50px;
+    border-radius: 60px;
+    border: 1px solid #e67e22;
+    text-decoration: none;
+    color: #e67e22;
+    font-size: 90%;
+    transition: background-color 0.3s;
+    font-weight: 300;
+}
+.plans-box-btn a:hover,
+.plans-box-btn a:active{
+    background-color: #cf6f1b;
+    color: #fff;
+}
+
+
+/*--------Form Section-----------*/
+
+
+.form-heading h1{
+    margin: auto;
+    margin-top: 70px;
+    font-weight: 300;
+    font-size: 200%;
+    text-align: center;
+}
+
+.form-heading h1:after{
+    content: " ";
+    height: 2px;
+    width: 100px;
+    background-color: #e67e22;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.form-option form{
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    width: 60%;
+}
+
+.form-option section label{
+    padding: 10px;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+textarea{
+    height: 100px;
+}
+
+input[type=checkbox]{
+    margin: 10px 5px 10px 0;
+}
+
+*:focus{
+    outline: none;
+}
+
+.submit{
+    background-color: #e67e22;
+    color: white;
+    padding: 8px 30px 8px 30px;
+    margin-top: 20px;
+    border-radius: 30px;
+    border-style: none;
+    transition: background-color 0.3s;
+}
+.submit:hover{
+    background-color: #cf6f1b;
+}
+
+
+/*--------Footer Section-----------*/
+
+
+.footer-section{
+    background-color: #333;
+    color: #888;
+    font-weight: 300;
+    font-size: 80%;
+}
+.footer-nav{
+    list-style-type: none;
+    margin-top: 50px;
+}
+.footer-nav li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.footer-nav a{
+    text-decoration: none !important;
+    color: #888;
+}
+.footer-nav a:hover{
+    color: #fff;
+}
+.footer-icon{
+    float: right;
+    list-style-type: none;
+    margin-top: 50px;
+}
+.footer-icon li{
+    display: inline-block;
+    padding-left: 20px;
+}
+.footer-icon a{
+    text-decoration: none !important;
+    color: #888 !important;
+}
+.facebook{
+    color: #888;
+}
+.twitter{
+    color: #888;
+}
+.google{
+    color: #888;
+}
+.instagram{
+    color: #888;
+}
+.facebook:hover{
+    color: #3b5998	;
+}
+.twitter:hover{
+    color: #55acee	;
+}
+.google:hover{
+    color: #dc4e41	;
+}
+.instagram:hover{
+    color: #3f729b	;
+}
+.footer-caption1{
+    margin: auto;
+    text-align: center;
+    padding: 20px 60px 20px 60px;
+    color: #888;
+}
+.footer-caption2{
+    margin: auto;
+    text-align: center !important;
+    padding-bottom: 50px;
+    color: #888;
+
+}
+
+
+.js-wp1,
+.js-wp2,
+.js-wp3{
+    opacity: 0;
+}
+
+.js-wp1.animated,
+.js-wp2.animated,
+.js-wp3.animated{
+    opacity: 1;
+}

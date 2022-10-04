@@ -1,0 +1,175 @@
+
+
+
+/* large tablte to 1200: (from 1024 to 1200px)*/
+@media only screen and (max-width: 1200px){
+
+    .cities-rating div i{
+        margin-right: 4px;
+    }
+
+    .sticky .main-nav{margin-right: 0px !important;}
+    .main-logo-black{margin-left: 0px !important;}
+    
+}
+
+
+
+
+
+
+
+/* small tablte to large tablte: (from 768 to 1023px) */
+@media only screen and (max-width: 1023px){
+
+    body{ 
+        font-size: 17px !important;}
+
+    .hero-sec-box{left: 4%;}
+
+    .head-paragraph{padding: 0px 60px;}
+
+    .app-work img{width: 60%;}
+
+    .step3-work{margin-top: 30px;}
+
+    .step3-work a img{width: 45%; margin-top: 10px;}
+
+    .plans-box-sec2 ul{padding-left: 10px; padding-top: 10px;}
+
+    .plans-icon{margin-right: 2px;}
+
+    .sticky .main-nav{margin-right: 0px !important;}
+    .main-logo-black{margin-left: 0px !important;}
+
+       
+    
+    
+}
+
+
+
+
+
+
+
+/* phone or small tablte: (from 481 to 767px) */
+@media only screen and (max-width: 767px){
+    body{ 
+        font-size: 16px !important;}
+
+    .hero-h1{font-size: 190% !important;}
+
+    .sub-h1{font-size: 160% !important;}
+
+
+ /*-----mobile-nav-----*/
+
+ .main-nav{
+    float: left;
+    margin-top: 30px;
+    text-align: center;
+}
+.main-nav li{
+    display: block !important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 115%;
+    border-bottom: 1px solid gray;
+}
+.main-nav li a{border: none !important;}
+
+.mobile-nav-icon-on{display: inline-block;}
+
+.sticky .main-nav{
+    margin-top: -2px;
+    margin-bottom: 10px;
+}
+
+.sticky .mobile-nav-icon-on{
+    color: black;
+    display: inline-block;
+    margin-top: 8px;
+}
+.sticky .mobile-nav-icon-off{
+    color: black;
+    margin-top: 8px; 
+}
+/*------------------*/
+
+
+    .app-work img{
+        width: 50%;
+        margin-right: 60px;
+    }
+
+    .step3-work a img{
+        width: 35%;
+        margin-top: 10px;}
+
+    .step3-work div{
+        height: 50px;
+        width: 50px;
+    }
+
+    .plans-col{
+        margin-top: 30px;
+        margin-bottom: 8px;
+    }
+
+    .plans-section{padding-bottom: 60px;}
+
+
+
+}
+
+
+
+/* small phone: (from 0 to 480px) */
+@media only screen and (max-width: 480px){
+
+    body{font-size: 14px !important;}
+
+
+    .sticky .main-nav{margin-right: 0px !important;}
+    .main-logo-black{margin-left: 0px !important;}
+
+
+    /*-----mobile-nav-----*/
+
+    .main-nav{
+        float: left;
+        margin-top: 30px;
+        text-align: center;
+    }
+    .main-nav li{
+        display: block !important;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 115%;
+        border-bottom: 1px solid gray;
+    }
+
+    .main-nav li a{border: none !important;}
+
+    .mobile-nav-icon-on{display: inline-block;}
+
+    .sticky .main-nav{
+        margin-top: -2px;
+        margin-bottom: 10px;
+    }
+
+    .sticky .mobile-nav-icon-on{
+        color: black;
+        display: inline-block;
+        margin-top: 0;
+    }
+    .sticky .mobile-nav-icon-off{
+        color: black;
+        margin-top: 0;
+    }
+
+    /*------------------*/
+    
+    
+}
